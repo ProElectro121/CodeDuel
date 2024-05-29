@@ -1,6 +1,6 @@
 How to use
 
-Create a .env file
-Put discord bot token and cliend id in it
-TOKEN=YourDiscordbotIT
-CLIENT=YourClientID
+Create a .env file\
+Put discord bot token and cliend id in it\
+TOKEN=YourDiscordbotIT\
+CLIENT=YourClientID\
