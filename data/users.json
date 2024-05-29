@@ -1,0 +1,48 @@
+{
+  "1244519288836984865": "puspendra_09",
+  "1244519288836984865_mashupHistory": [
+    {
+      "startTime": 1716873424072,
+      "endTime": 1716873604072,
+      "problems": [
+        {
+          "name": "Balanced Shuffle (Easy)",
+          "contestId": 1970,
+          "index": "A1",
+          "solved": true
+        },
+        {
+          "name": "Progressive Square",
+          "contestId": 1955,
+          "index": "B",
+          "solved": true
+        },
+        {
+          "name": "Permutation Printing",
+          "contestId": 1930,
+          "index": "B",
+          "solved": false
+        }
+      ]
+    },
+    {
+      "startTime": 1716873830303,
+      "endTime": 1716874010303,
+      "problems": [
+        {
+          "name": "Permutation Printing",
+          "contestId": 1930,
+          "index": "B",
+          "solved": false
+        },
+        {
+          "name": "Easy As ABC",
+          "contestId": 1906,
+          "index": "A",
+          "solved": true
+        }
+      ]
+    }
+  ],
+  "908974555815637082": "NotPuspendra"
+}
