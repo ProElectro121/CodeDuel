@@ -24,6 +24,7 @@ const { MessageEmbed } = pkg;
 import dotenv from 'dotenv';
 dotenv.config();
 
+
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -128,10 +129,13 @@ client.login(process.env.TOKEN);
 
 // Keep the server alive
 const app = express();
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Discord bot is running.');
+    res.render('index', { botInviteLink: 'https://discord.com/oauth2/authorize?client_id=1244520789558956053&permissions=8&integration_type=0&scope=bot' });
 });
 
 app.listen(PORT, () => {

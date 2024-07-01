@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left; /* Align text to left for instructions */
+      margin: 20px;
+      padding: 20px;
+      background-color: #333; /* Dark background color */
+      color: #fff; /* White text color */
+    }
+    h1 {
+      color: #4CAF50;
+      text-align: center; /* Center heading */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #555; /* Darker background for table headers */
+      color: #fff;
+    }
+    .code {
+      font-family: Consolas, monospace; /* Use monospace font for command examples */
+      color: #b5d1ff; /* Light blue for code */
+    }
+    .center-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>CodeDuel</h1>
+  <p>Our Discord bot provides several useful features for Codeforces users:</p>
+
+  <!-- Instructions and features in table format -->
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>Description</th>
+      <th>Command Example</th>
+    </tr>
+    <tr>
+      <td>Registration</td>
+      <td>Register your Codeforces account on the bot</td>
+      <td><span class="code">!register &lt;CodeforcesHandle&gt;</span></td>
+    </tr>
+    <tr>
+      <td>Unregistration</td>
+      <td>Unregister your Codeforces account from the bot</td>
+      <td><span class="code">!unregister</span></td>
+    </tr>
+    <tr>
+      <td>Duels</td>
+      <td>Create and accept duels</td>
+      <td><span class="code">!createduel</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Accept a duel invitation</td>
+      <td><span class="code">!acceptduel &lt;username&gt;</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Get update on duel score</td>
+      <td><span class="code">!duelupdate</span></td>
+    </tr>
+    <tr>
+      <td>Mashups</td>
+      <td>Create and view mashups</td>
+      <td><span class="code">!createmashup &lt;number_of_problems&gt; &lt;time_in_minutes&gt; &lt;rating_lower_bound&gt; &lt;rating_upper_bound&gt;</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>View mashup history</td>
+      <td><span class="code">!mashuphistory</span></td>
+    </tr>
+    <tr>
+      <td>User Information</td>
+      <td>Fetch information about a Codeforces user</td>
+      <td><span class="code">!infouser &lt;Codeforces_username&gt;</span></td>
+    </tr>
+    <tr>
+      <td>Ranklist</td>
+      <td>Fetch the list of registered users for a specific round</td>
+      <td><span class="code">!ranklist &lt;round_number&gt;</span></td>
+    </tr>
+  </table>
+
+  <!-- Centered button -->
+  <div class="center-button">
+    <a class="button" href="<%= botInviteLink %>">Add Bot to Your Server</a>
+  </div>
+</body>
+</html>
