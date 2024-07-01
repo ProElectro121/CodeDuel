@@ -17,7 +17,7 @@ import createDuelCommand from './commands/createDuel.js';
 import { checkAndUpdateScores } from './utils/checkAndUpdateScores.js';
 import { compareUserWins } from './commands/compareWinsCommand.js';
 import pkg from 'discord.js'
-// import express from 'express'
+import express from 'express'
 
 const { MessageEmbed } = pkg;
 
