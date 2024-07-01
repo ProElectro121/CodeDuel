@@ -138,6 +138,24 @@ app.get('/', (req, res) => {
     res.render('index', { botInviteLink: 'https://discord.com/oauth2/authorize?client_id=1244520789558956053&permissions=8&integration_type=0&scope=bot' });
 });
 
+// Self-ping every 5 minutes to keep the server alive
+const SELF_PING_INTERVAL =  5 * 60 * 1000; // 5 minutes in milliseconds
+
+function selfPing() {
+  console.log('Self-pinging to keep server alive...');
+  axios.get('https://codeduel-7hkt.onrender.com/') // Replace with your bot URL
+    .then(() => {
+      console.log('Self-ping successful.');
+    })
+    .catch((error) => {
+      console.error('Error during self-ping:', error.message);
+    });
+}
+
+// Initiate the first self-ping and then schedule it every SELF_PING_INTERVAL
+selfPing();
+setInterval(selfPing, SELF_PING_INTERVAL);
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
